@@ -23,7 +23,6 @@ public class Player : MonoBehaviour
    {
       inputHorizontal = Input.GetAxis(inputNameHorizontal);
       inputVertical = Input.GetAxis(inputNameVertical);
-      
    }
    
    private void FixedUpdate()
