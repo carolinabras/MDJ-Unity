@@ -4,5 +4,23 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Local Multiplayer/UI/main menu.unity
+    guid: 073f6a22e3b0853ad86d53a2e312cd27
+  - enabled: 1
+    path: Assets/Scenes/Local Multiplayer/1 screen.unity
+    guid: f8ad4742780ab2568996d5f065a85c32
+  - enabled: 1
+    path: Assets/Scenes/Local Multiplayer/base.unity
+    guid: 30c87e1a02f20f99fa4850d73e62d927
+  - enabled: 1
+    path: Assets/Scenes/Local Multiplayer/split screen.unity
+    guid: 72b378fe8d08617f9a64366a8f6c25d3
+  - enabled: 1
+    path: Assets/Scenes/Local Multiplayer/UI/pause menu.unity
+    guid: c23bec7310a0a1ec7b3130919f901252
+  - enabled: 1
+    path: Assets/Scenes/Local Multiplayer/UI/split screen HUD.unity
+    guid: 58ed2a5519e5858bb80434ac47ed719a
   m_configObjects: {}
