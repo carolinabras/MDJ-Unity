@@ -18,9 +18,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Local Multiplayer/split screen.unity
     guid: 72b378fe8d08617f9a64366a8f6c25d3
   - enabled: 1
-    path: Assets/Scenes/Local Multiplayer/UI/pause menu.unity
+    path: Assets/Scenes/Local Multiplayer/UI/overlaid elements.unity
     guid: c23bec7310a0a1ec7b3130919f901252
   - enabled: 1
     path: Assets/Scenes/Local Multiplayer/UI/split screen HUD.unity
     guid: 58ed2a5519e5858bb80434ac47ed719a
+  - enabled: 1
+    path: Assets/Scenes/Local Multiplayer/UI/end scene.unity
+    guid: 14d392cc2b7a285928e9ce0ed4fe83b6
   m_configObjects: {}

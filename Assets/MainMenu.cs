@@ -10,11 +10,11 @@ public class MainMenu : MonoBehaviour
     void Start()
     {
         startButton.onClick.AddListener(LoadNextScene);
-        //startButton.onClick.AddListener(()=>SceneManager.LoadScene("split screen HUD")); as a shorter alternative
+        //startButton.onClick.AddListener(()=>SceneManager.LoadScene("overlaid elements")); as a shorter alternative
     }
 
     private void LoadNextScene()
     {
-        SceneManager.LoadScene("pause menu");
+        SceneManager.LoadScene("overlaid elements");
     }
 }
