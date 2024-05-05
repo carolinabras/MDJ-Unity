@@ -1410,7 +1410,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1454412254}
   HUDText: {fileID: 1931131896}
-  secondsLeft: 0
+  secondsLeft: 30
 --- !u!4 &1534766561
 Transform:
   m_ObjectHideFlags: 0

@@ -9,11 +9,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject pauseMenu;
     [SerializeField] private Text HUDText;
 
-    [SerializeField] private int secondsLeft;
+    [SerializeField] private int secondsLeft = 30;
     
     private void Start()
     {
-        secondsLeft = 300;
         HUDText.text = "Time Left: " + secondsLeft;
         InvokeRepeating("DecrementSecondsLeft", 1, 1);
         pauseMenu.SetActive(false);
