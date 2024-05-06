@@ -434,7 +434,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: MDJ Demo
+  m_Text: MDJ Workshop
 --- !u!222 &990958653
 CanvasRenderer:
   m_ObjectHideFlags: 0
