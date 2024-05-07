@@ -13,7 +13,13 @@ public class Player : MonoBehaviour
  
    private float inputHorizontal;
    private float inputVertical;
+   private bool interactive;
 
+   public void SetInteractive(bool state)
+   {
+      interactive = state;
+   }
+   
    private void Start()
    {
       rb = GetComponent<Rigidbody>();
@@ -27,6 +33,9 @@ public class Player : MonoBehaviour
    
    private void FixedUpdate()
    {
-      rb.velocity = new Vector3(inputHorizontal * speed * Time.fixedDeltaTime, rb.velocity.y, inputVertical * speed * Time.fixedDeltaTime);
+      if (interactive)
+      {
+         rb.velocity = new Vector3(inputHorizontal * speed * Time.fixedDeltaTime, rb.velocity.y, inputVertical * speed * Time.fixedDeltaTime);
+      }
    }
 }

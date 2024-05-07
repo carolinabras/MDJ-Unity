@@ -9,14 +9,36 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Text HUDText;
 
     [SerializeField] private int secondsLeft = 30;
+    [SerializeField] private Player[] players;
+
     
     private void Start()
     {
+        HUDText.gameObject.SetActive(false);
+        foreach (var player in players)
+        {
+            player.SetInteractive(false);
+        }
+        //the start is delayed for the cutscene
+        StartCoroutine(DelayedStart());
+    }
+
+    IEnumerator DelayedStart()
+    {
+        //cutscene playing...
+        yield return new WaitForSeconds(5.5f);
+
+        foreach (var player in players)
+        {
+            player.SetInteractive(true);
+        }
+        
         HUDText.text = "Time Left: " + secondsLeft;
+        HUDText.gameObject.SetActive(true);
         InvokeRepeating("DecrementSecondsLeft", 1, 1);
         pauseMenu.SetActive(false);
     }
-
+    
     private IEnumerator DecrementSecondsLeft()
     {
         secondsLeft--;
