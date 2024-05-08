@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Player[] players;
 
     
-    private void Start()
+    private void Awake()
     {
         HUDText.gameObject.SetActive(false);
         foreach (var player in players)
