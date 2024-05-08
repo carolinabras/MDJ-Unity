@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject pauseMenu;
     [SerializeField] private Text HUDText;
 
+    [SerializeField] private GameObject cutsceneCamera;
     [SerializeField] private int secondsLeft = 30;
     [SerializeField] private Player[] players;
 
@@ -28,6 +29,7 @@ public class GameManager : MonoBehaviour
         //cutscene playing...
         yield return new WaitForSeconds(5.5f);
 
+        cutsceneCamera.SetActive(false);
         foreach (var player in players)
         {
             player.SetInteractive(true);

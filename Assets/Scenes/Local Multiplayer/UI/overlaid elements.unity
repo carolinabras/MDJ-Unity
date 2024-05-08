@@ -246,6 +246,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1093259840547385265, guid: a03abf9753d678b6e8c9dfab1bfbbe44, type: 3}
+      propertyPath: m_NormalizedViewPortRect.x
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1454547457776414587, guid: a03abf9753d678b6e8c9dfab1bfbbe44, type: 3}
       propertyPath: inputNameVertical
       value: Vertical 2
@@ -254,13 +258,17 @@ PrefabInstance:
       propertyPath: inputNameHorizontal
       value: Horizontal 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2890577838473065641, guid: a03abf9753d678b6e8c9dfab1bfbbe44, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3991133296676025436, guid: a03abf9753d678b6e8c9dfab1bfbbe44, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: f31d3e08465399f63b4f8c60a1bbf38f, type: 2}
     - target: {fileID: 7617219635954104918, guid: a03abf9753d678b6e8c9dfab1bfbbe44, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8910387635539442260, guid: a03abf9753d678b6e8c9dfab1bfbbe44, type: 3}
       propertyPath: m_Name
@@ -362,7 +370,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -1255,6 +1263,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1454412254}
   HUDText: {fileID: 1931131896}
+  cutsceneCamera: {fileID: 1481402413}
   secondsLeft: 30
   players:
   - {fileID: 1053651802}
